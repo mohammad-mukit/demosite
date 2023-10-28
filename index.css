@@ -1,0 +1,91 @@
+*{
+    overflow: scroll;
+    scroll-behavior: smooth;
+    ::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 80vh;
+    width: 80vw;
+    background-color: black;
+    margin: 10%;
+    
+}
+
+.container .skillbox{
+    height: 90%;
+    width: 90%;
+    margin: 5%;
+    background-color: rgb(65, 17, 161);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.container .skills{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+    position: relative;
+
+}
+
+
+.skills .outer{
+    height: 135px;
+    width: 135px;
+    background-color: yellow;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+
+}
+
+.skills .inner{
+    height: 105px;
+    width: 105px;
+    background-color: rgb(0, 255, 81);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+
+.skills svg{
+    /* background-color: blue; */
+    height: 160px;
+    width: 160px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.skills svg circle{
+    fill: none;
+    stroke: aqua;
+    stroke-width: 15px;
+    stroke-linecap: round;
+    stroke-dasharray: 370;
+    stroke-dashoffset: 370;
+    animation: anim1 2s linear forwards;
+}
+
+@keyframes anim1{
+    100%{
+        stroke-dashoffset: 50;
+    }
+}
